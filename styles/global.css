@@ -11,4 +11,30 @@
 	body {
 		font-family: "Poppins", sans-serif;
 	}
+	.fade-enter .switch {
+		opacity: 0;
+		transform: translateX(50%);
+	}
+	.fade-enter-active .switch {
+		opacity: 1;
+		transform: translateX(0%);
+	}
+	.fade-exit .switch {
+		opacity: 1;
+		transform: translateX(0%);
+	}
+	.fade-exit-active .switch {
+		opacity: 0;
+		transform: translateX(-50%);
+	}
+	.fade-enter-active .switch,
+	.fade-exit-active .switch {
+		transition: opacity 500ms, transform 500ms;
+	}
+}
+
+@layer components {
+	.button-form {
+		@apply rounded-3xl h-10 w-full max-w-xs font-semibold;
+	}
 }

@@ -8,11 +8,7 @@ module.exports = {
 	],
 	theme: {
 		extend: {
-			colors: {
-				sky: {
-					main: "#EAF0F7",
-				},
-			},
+			colors: {},
 		},
 	},
 	plugins: [],
